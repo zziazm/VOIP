@@ -1,0 +1,723 @@
+/* A Bison parser, made by GNU Bison 2.3.  */
+
+/* Skeleton interface for Bison's Yacc-like parsers in C
+
+   Copyright (C) 1984, 1989, 1990, 2000, 2001, 2002, 2003, 2004, 2005, 2006
+   Free Software Foundation, Inc.
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2, or (at your option)
+   any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor,
+   Boston, MA 02110-1301, USA.  */
+
+/* As a special exception, you may create a larger work that contains
+   part or all of the Bison parser skeleton and distribute that work
+   under terms of your choice, so long as that work isn't itself a
+   parser generator using the skeleton or a modified version thereof
+   as a parser skeleton.  Alternatively, if you modify or redistribute
+   the parser skeleton itself, you may (at your option) remove this
+   special exception, which will cause the skeleton and the resulting
+   Bison output files to be licensed under the GNU General Public
+   License without this special exception.
+
+   This special exception was added by the Free Software Foundation in
+   version 2.2 of Bison.  */
+
+/* Tokens.  */
+#ifndef YYTOKENTYPE
+# define YYTOKENTYPE
+   /* Put the tokens into the symbol table, so that GDB and other debuggers
+      know about them.  */
+   enum yytokentype {
+     FORWARD = 258,
+     FORWARD_TCP = 259,
+     FORWARD_TLS = 260,
+     FORWARD_SCTP = 261,
+     FORWARD_UDP = 262,
+     EXIT = 263,
+     DROP = 264,
+     RETURN = 265,
+     BREAK = 266,
+     LOG_TOK = 267,
+     ERROR = 268,
+     ROUTE = 269,
+     ROUTE_REQUEST = 270,
+     ROUTE_FAILURE = 271,
+     ROUTE_ONREPLY = 272,
+     ROUTE_REPLY = 273,
+     ROUTE_BRANCH = 274,
+     ROUTE_SEND = 275,
+     ROUTE_EVENT = 276,
+     EXEC = 277,
+     SET_HOST = 278,
+     SET_HOSTPORT = 279,
+     SET_HOSTPORTTRANS = 280,
+     PREFIX = 281,
+     STRIP = 282,
+     STRIP_TAIL = 283,
+     SET_USERPHONE = 284,
+     APPEND_BRANCH = 285,
+     REMOVE_BRANCH = 286,
+     CLEAR_BRANCHES = 287,
+     SET_USER = 288,
+     SET_USERPASS = 289,
+     SET_PORT = 290,
+     SET_URI = 291,
+     REVERT_URI = 292,
+     FORCE_RPORT = 293,
+     ADD_LOCAL_RPORT = 294,
+     FORCE_TCP_ALIAS = 295,
+     UDP_MTU = 296,
+     UDP_MTU_TRY_PROTO = 297,
+     UDP4_RAW = 298,
+     UDP4_RAW_MTU = 299,
+     UDP4_RAW_TTL = 300,
+     IF = 301,
+     ELSE = 302,
+     SET_ADV_ADDRESS = 303,
+     SET_ADV_PORT = 304,
+     FORCE_SEND_SOCKET = 305,
+     SET_FWD_NO_CONNECT = 306,
+     SET_RPL_NO_CONNECT = 307,
+     SET_FWD_CLOSE = 308,
+     SET_RPL_CLOSE = 309,
+     SWITCH = 310,
+     CASE = 311,
+     DEFAULT = 312,
+     WHILE = 313,
+     CFG_SELECT = 314,
+     CFG_RESET = 315,
+     URIHOST = 316,
+     URIPORT = 317,
+     MAX_LEN = 318,
+     SETFLAG = 319,
+     RESETFLAG = 320,
+     ISFLAGSET = 321,
+     SETAVPFLAG = 322,
+     RESETAVPFLAG = 323,
+     ISAVPFLAGSET = 324,
+     METHOD = 325,
+     URI = 326,
+     FROM_URI = 327,
+     TO_URI = 328,
+     SRCIP = 329,
+     SRCPORT = 330,
+     DSTIP = 331,
+     DSTPORT = 332,
+     TOIP = 333,
+     TOPORT = 334,
+     SNDIP = 335,
+     SNDPORT = 336,
+     SNDPROTO = 337,
+     SNDAF = 338,
+     PROTO = 339,
+     AF = 340,
+     MYSELF = 341,
+     MSGLEN = 342,
+     UDP = 343,
+     TCP = 344,
+     TLS = 345,
+     SCTP = 346,
+     WS = 347,
+     WSS = 348,
+     DEBUG_V = 349,
+     FORK = 350,
+     FORK_DELAY = 351,
+     MODINIT_DELAY = 352,
+     LOGSTDERROR = 353,
+     LOGFACILITY = 354,
+     LOGNAME = 355,
+     LOGCOLOR = 356,
+     LOGPREFIX = 357,
+     LOGENGINETYPE = 358,
+     LOGENGINEDATA = 359,
+     LISTEN = 360,
+     ADVERTISE = 361,
+     ALIAS = 362,
+     SR_AUTO_ALIASES = 363,
+     DNS = 364,
+     REV_DNS = 365,
+     DNS_TRY_IPV6 = 366,
+     DNS_TRY_NAPTR = 367,
+     DNS_SRV_LB = 368,
+     DNS_UDP_PREF = 369,
+     DNS_TCP_PREF = 370,
+     DNS_TLS_PREF = 371,
+     DNS_SCTP_PREF = 372,
+     DNS_RETR_TIME = 373,
+     DNS_RETR_NO = 374,
+     DNS_SERVERS_NO = 375,
+     DNS_USE_SEARCH = 376,
+     DNS_SEARCH_FMATCH = 377,
+     DNS_NAPTR_IGNORE_RFC = 378,
+     DNS_CACHE_INIT = 379,
+     DNS_USE_CACHE = 380,
+     DNS_USE_FAILOVER = 381,
+     DNS_CACHE_FLAGS = 382,
+     DNS_CACHE_NEG_TTL = 383,
+     DNS_CACHE_MIN_TTL = 384,
+     DNS_CACHE_MAX_TTL = 385,
+     DNS_CACHE_MEM = 386,
+     DNS_CACHE_GC_INT = 387,
+     DNS_CACHE_DEL_NONEXP = 388,
+     DNS_CACHE_REC_PREF = 389,
+     AUTO_BIND_IPV6 = 390,
+     DST_BLST_INIT = 391,
+     USE_DST_BLST = 392,
+     DST_BLST_MEM = 393,
+     DST_BLST_TTL = 394,
+     DST_BLST_GC_INT = 395,
+     DST_BLST_UDP_IMASK = 396,
+     DST_BLST_TCP_IMASK = 397,
+     DST_BLST_TLS_IMASK = 398,
+     DST_BLST_SCTP_IMASK = 399,
+     PORT = 400,
+     STAT = 401,
+     CHILDREN = 402,
+     SOCKET_WORKERS = 403,
+     ASYNC_WORKERS = 404,
+     ASYNC_USLEEP = 405,
+     CHECK_VIA = 406,
+     PHONE2TEL = 407,
+     MEMLOG = 408,
+     MEMDBG = 409,
+     MEMSUM = 410,
+     MEMSAFETY = 411,
+     MEMJOIN = 412,
+     MEMSTATUSMODE = 413,
+     CORELOG = 414,
+     SIP_WARNING = 415,
+     SERVER_SIGNATURE = 416,
+     SERVER_HEADER = 417,
+     USER_AGENT_HEADER = 418,
+     REPLY_TO_VIA = 419,
+     LOADMODULE = 420,
+     LOADPATH = 421,
+     MODPARAM = 422,
+     MAXBUFFER = 423,
+     SQL_BUFFER_SIZE = 424,
+     USER = 425,
+     GROUP = 426,
+     CHROOT = 427,
+     WDIR = 428,
+     RUNDIR = 429,
+     MHOMED = 430,
+     DISABLE_TCP = 431,
+     TCP_ACCEPT_ALIASES = 432,
+     TCP_CHILDREN = 433,
+     TCP_CONNECT_TIMEOUT = 434,
+     TCP_SEND_TIMEOUT = 435,
+     TCP_CON_LIFETIME = 436,
+     TCP_POLL_METHOD = 437,
+     TCP_MAX_CONNECTIONS = 438,
+     TLS_MAX_CONNECTIONS = 439,
+     TCP_NO_CONNECT = 440,
+     TCP_SOURCE_IPV4 = 441,
+     TCP_SOURCE_IPV6 = 442,
+     TCP_OPT_FD_CACHE = 443,
+     TCP_OPT_BUF_WRITE = 444,
+     TCP_OPT_CONN_WQ_MAX = 445,
+     TCP_OPT_WQ_MAX = 446,
+     TCP_OPT_RD_BUF = 447,
+     TCP_OPT_WQ_BLK = 448,
+     TCP_OPT_DEFER_ACCEPT = 449,
+     TCP_OPT_DELAYED_ACK = 450,
+     TCP_OPT_SYNCNT = 451,
+     TCP_OPT_LINGER2 = 452,
+     TCP_OPT_KEEPALIVE = 453,
+     TCP_OPT_KEEPIDLE = 454,
+     TCP_OPT_KEEPINTVL = 455,
+     TCP_OPT_KEEPCNT = 456,
+     TCP_OPT_CRLF_PING = 457,
+     TCP_OPT_ACCEPT_NO_CL = 458,
+     TCP_CLONE_RCVBUF = 459,
+     DISABLE_TLS = 460,
+     ENABLE_TLS = 461,
+     TLSLOG = 462,
+     TLS_PORT_NO = 463,
+     TLS_METHOD = 464,
+     TLS_HANDSHAKE_TIMEOUT = 465,
+     TLS_SEND_TIMEOUT = 466,
+     SSLv23 = 467,
+     SSLv2 = 468,
+     SSLv3 = 469,
+     TLSv1 = 470,
+     TLS_VERIFY = 471,
+     TLS_REQUIRE_CERTIFICATE = 472,
+     TLS_CERTIFICATE = 473,
+     TLS_PRIVATE_KEY = 474,
+     TLS_CA_LIST = 475,
+     DISABLE_SCTP = 476,
+     ENABLE_SCTP = 477,
+     SCTP_CHILDREN = 478,
+     ADVERTISED_ADDRESS = 479,
+     ADVERTISED_PORT = 480,
+     DISABLE_CORE = 481,
+     OPEN_FD_LIMIT = 482,
+     SHM_MEM_SZ = 483,
+     SHM_FORCE_ALLOC = 484,
+     MLOCK_PAGES = 485,
+     REAL_TIME = 486,
+     RT_PRIO = 487,
+     RT_POLICY = 488,
+     RT_TIMER1_PRIO = 489,
+     RT_TIMER1_POLICY = 490,
+     RT_TIMER2_PRIO = 491,
+     RT_TIMER2_POLICY = 492,
+     MCAST_LOOPBACK = 493,
+     MCAST_TTL = 494,
+     TOS = 495,
+     PMTU_DISCOVERY = 496,
+     KILL_TIMEOUT = 497,
+     MAX_WLOOPS = 498,
+     PVBUFSIZE = 499,
+     PVBUFSLOTS = 500,
+     HTTP_REPLY_PARSE = 501,
+     VERSION_TABLE_CFG = 502,
+     CFG_DESCRIPTION = 503,
+     SERVER_ID = 504,
+     MAX_RECURSIVE_LEVEL = 505,
+     MAX_BRANCHES_PARAM = 506,
+     LATENCY_LOG = 507,
+     LATENCY_LIMIT_DB = 508,
+     LATENCY_LIMIT_ACTION = 509,
+     MSG_TIME = 510,
+     ONSEND_RT_REPLY = 511,
+     FLAGS_DECL = 512,
+     AVPFLAGS_DECL = 513,
+     ATTR_MARK = 514,
+     SELECT_MARK = 515,
+     ATTR_FROM = 516,
+     ATTR_TO = 517,
+     ATTR_FROMURI = 518,
+     ATTR_TOURI = 519,
+     ATTR_FROMUSER = 520,
+     ATTR_TOUSER = 521,
+     ATTR_FROMDOMAIN = 522,
+     ATTR_TODOMAIN = 523,
+     ATTR_GLOBAL = 524,
+     ADDEQ = 525,
+     SUBST = 526,
+     SUBSTDEF = 527,
+     SUBSTDEFS = 528,
+     EQUAL = 529,
+     LOG_OR = 530,
+     LOG_AND = 531,
+     BIN_OR = 532,
+     BIN_AND = 533,
+     BIN_XOR = 534,
+     BIN_LSHIFT = 535,
+     BIN_RSHIFT = 536,
+     STRDIFF = 537,
+     STREQ = 538,
+     INTDIFF = 539,
+     INTEQ = 540,
+     MATCH = 541,
+     DIFF = 542,
+     EQUAL_T = 543,
+     LTE = 544,
+     GTE = 545,
+     LT = 546,
+     GT = 547,
+     MINUS = 548,
+     PLUS = 549,
+     MODULO = 550,
+     SLASH = 551,
+     STAR = 552,
+     BIN_NOT = 553,
+     UNARY = 554,
+     NOT = 555,
+     DEFINED = 556,
+     STRCAST = 557,
+     INTCAST = 558,
+     DOT = 559,
+     STRLEN = 560,
+     STREMPTY = 561,
+     NUMBER = 562,
+     ID = 563,
+     NUM_ID = 564,
+     STRING = 565,
+     IPV6ADDR = 566,
+     PVAR = 567,
+     AVP_OR_PVAR = 568,
+     EVENT_RT_NAME = 569,
+     COMMA = 570,
+     SEMICOLON = 571,
+     RPAREN = 572,
+     LPAREN = 573,
+     LBRACE = 574,
+     RBRACE = 575,
+     LBRACK = 576,
+     RBRACK = 577,
+     CR = 578,
+     COLON = 579
+   };
+#endif
+/* Tokens.  */
+#define FORWARD 258
+#define FORWARD_TCP 259
+#define FORWARD_TLS 260
+#define FORWARD_SCTP 261
+#define FORWARD_UDP 262
+#define EXIT 263
+#define DROP 264
+#define RETURN 265
+#define BREAK 266
+#define LOG_TOK 267
+#define ERROR 268
+#define ROUTE 269
+#define ROUTE_REQUEST 270
+#define ROUTE_FAILURE 271
+#define ROUTE_ONREPLY 272
+#define ROUTE_REPLY 273
+#define ROUTE_BRANCH 274
+#define ROUTE_SEND 275
+#define ROUTE_EVENT 276
+#define EXEC 277
+#define SET_HOST 278
+#define SET_HOSTPORT 279
+#define SET_HOSTPORTTRANS 280
+#define PREFIX 281
+#define STRIP 282
+#define STRIP_TAIL 283
+#define SET_USERPHONE 284
+#define APPEND_BRANCH 285
+#define REMOVE_BRANCH 286
+#define CLEAR_BRANCHES 287
+#define SET_USER 288
+#define SET_USERPASS 289
+#define SET_PORT 290
+#define SET_URI 291
+#define REVERT_URI 292
+#define FORCE_RPORT 293
+#define ADD_LOCAL_RPORT 294
+#define FORCE_TCP_ALIAS 295
+#define UDP_MTU 296
+#define UDP_MTU_TRY_PROTO 297
+#define UDP4_RAW 298
+#define UDP4_RAW_MTU 299
+#define UDP4_RAW_TTL 300
+#define IF 301
+#define ELSE 302
+#define SET_ADV_ADDRESS 303
+#define SET_ADV_PORT 304
+#define FORCE_SEND_SOCKET 305
+#define SET_FWD_NO_CONNECT 306
+#define SET_RPL_NO_CONNECT 307
+#define SET_FWD_CLOSE 308
+#define SET_RPL_CLOSE 309
+#define SWITCH 310
+#define CASE 311
+#define DEFAULT 312
+#define WHILE 313
+#define CFG_SELECT 314
+#define CFG_RESET 315
+#define URIHOST 316
+#define URIPORT 317
+#define MAX_LEN 318
+#define SETFLAG 319
+#define RESETFLAG 320
+#define ISFLAGSET 321
+#define SETAVPFLAG 322
+#define RESETAVPFLAG 323
+#define ISAVPFLAGSET 324
+#define METHOD 325
+#define URI 326
+#define FROM_URI 327
+#define TO_URI 328
+#define SRCIP 329
+#define SRCPORT 330
+#define DSTIP 331
+#define DSTPORT 332
+#define TOIP 333
+#define TOPORT 334
+#define SNDIP 335
+#define SNDPORT 336
+#define SNDPROTO 337
+#define SNDAF 338
+#define PROTO 339
+#define AF 340
+#define MYSELF 341
+#define MSGLEN 342
+#define UDP 343
+#define TCP 344
+#define TLS 345
+#define SCTP 346
+#define WS 347
+#define WSS 348
+#define DEBUG_V 349
+#define FORK 350
+#define FORK_DELAY 351
+#define MODINIT_DELAY 352
+#define LOGSTDERROR 353
+#define LOGFACILITY 354
+#define LOGNAME 355
+#define LOGCOLOR 356
+#define LOGPREFIX 357
+#define LOGENGINETYPE 358
+#define LOGENGINEDATA 359
+#define LISTEN 360
+#define ADVERTISE 361
+#define ALIAS 362
+#define SR_AUTO_ALIASES 363
+#define DNS 364
+#define REV_DNS 365
+#define DNS_TRY_IPV6 366
+#define DNS_TRY_NAPTR 367
+#define DNS_SRV_LB 368
+#define DNS_UDP_PREF 369
+#define DNS_TCP_PREF 370
+#define DNS_TLS_PREF 371
+#define DNS_SCTP_PREF 372
+#define DNS_RETR_TIME 373
+#define DNS_RETR_NO 374
+#define DNS_SERVERS_NO 375
+#define DNS_USE_SEARCH 376
+#define DNS_SEARCH_FMATCH 377
+#define DNS_NAPTR_IGNORE_RFC 378
+#define DNS_CACHE_INIT 379
+#define DNS_USE_CACHE 380
+#define DNS_USE_FAILOVER 381
+#define DNS_CACHE_FLAGS 382
+#define DNS_CACHE_NEG_TTL 383
+#define DNS_CACHE_MIN_TTL 384
+#define DNS_CACHE_MAX_TTL 385
+#define DNS_CACHE_MEM 386
+#define DNS_CACHE_GC_INT 387
+#define DNS_CACHE_DEL_NONEXP 388
+#define DNS_CACHE_REC_PREF 389
+#define AUTO_BIND_IPV6 390
+#define DST_BLST_INIT 391
+#define USE_DST_BLST 392
+#define DST_BLST_MEM 393
+#define DST_BLST_TTL 394
+#define DST_BLST_GC_INT 395
+#define DST_BLST_UDP_IMASK 396
+#define DST_BLST_TCP_IMASK 397
+#define DST_BLST_TLS_IMASK 398
+#define DST_BLST_SCTP_IMASK 399
+#define PORT 400
+#define STAT 401
+#define CHILDREN 402
+#define SOCKET_WORKERS 403
+#define ASYNC_WORKERS 404
+#define ASYNC_USLEEP 405
+#define CHECK_VIA 406
+#define PHONE2TEL 407
+#define MEMLOG 408
+#define MEMDBG 409
+#define MEMSUM 410
+#define MEMSAFETY 411
+#define MEMJOIN 412
+#define MEMSTATUSMODE 413
+#define CORELOG 414
+#define SIP_WARNING 415
+#define SERVER_SIGNATURE 416
+#define SERVER_HEADER 417
+#define USER_AGENT_HEADER 418
+#define REPLY_TO_VIA 419
+#define LOADMODULE 420
+#define LOADPATH 421
+#define MODPARAM 422
+#define MAXBUFFER 423
+#define SQL_BUFFER_SIZE 424
+#define USER 425
+#define GROUP 426
+#define CHROOT 427
+#define WDIR 428
+#define RUNDIR 429
+#define MHOMED 430
+#define DISABLE_TCP 431
+#define TCP_ACCEPT_ALIASES 432
+#define TCP_CHILDREN 433
+#define TCP_CONNECT_TIMEOUT 434
+#define TCP_SEND_TIMEOUT 435
+#define TCP_CON_LIFETIME 436
+#define TCP_POLL_METHOD 437
+#define TCP_MAX_CONNECTIONS 438
+#define TLS_MAX_CONNECTIONS 439
+#define TCP_NO_CONNECT 440
+#define TCP_SOURCE_IPV4 441
+#define TCP_SOURCE_IPV6 442
+#define TCP_OPT_FD_CACHE 443
+#define TCP_OPT_BUF_WRITE 444
+#define TCP_OPT_CONN_WQ_MAX 445
+#define TCP_OPT_WQ_MAX 446
+#define TCP_OPT_RD_BUF 447
+#define TCP_OPT_WQ_BLK 448
+#define TCP_OPT_DEFER_ACCEPT 449
+#define TCP_OPT_DELAYED_ACK 450
+#define TCP_OPT_SYNCNT 451
+#define TCP_OPT_LINGER2 452
+#define TCP_OPT_KEEPALIVE 453
+#define TCP_OPT_KEEPIDLE 454
+#define TCP_OPT_KEEPINTVL 455
+#define TCP_OPT_KEEPCNT 456
+#define TCP_OPT_CRLF_PING 457
+#define TCP_OPT_ACCEPT_NO_CL 458
+#define TCP_CLONE_RCVBUF 459
+#define DISABLE_TLS 460
+#define ENABLE_TLS 461
+#define TLSLOG 462
+#define TLS_PORT_NO 463
+#define TLS_METHOD 464
+#define TLS_HANDSHAKE_TIMEOUT 465
+#define TLS_SEND_TIMEOUT 466
+#define SSLv23 467
+#define SSLv2 468
+#define SSLv3 469
+#define TLSv1 470
+#define TLS_VERIFY 471
+#define TLS_REQUIRE_CERTIFICATE 472
+#define TLS_CERTIFICATE 473
+#define TLS_PRIVATE_KEY 474
+#define TLS_CA_LIST 475
+#define DISABLE_SCTP 476
+#define ENABLE_SCTP 477
+#define SCTP_CHILDREN 478
+#define ADVERTISED_ADDRESS 479
+#define ADVERTISED_PORT 480
+#define DISABLE_CORE 481
+#define OPEN_FD_LIMIT 482
+#define SHM_MEM_SZ 483
+#define SHM_FORCE_ALLOC 484
+#define MLOCK_PAGES 485
+#define REAL_TIME 486
+#define RT_PRIO 487
+#define RT_POLICY 488
+#define RT_TIMER1_PRIO 489
+#define RT_TIMER1_POLICY 490
+#define RT_TIMER2_PRIO 491
+#define RT_TIMER2_POLICY 492
+#define MCAST_LOOPBACK 493
+#define MCAST_TTL 494
+#define TOS 495
+#define PMTU_DISCOVERY 496
+#define KILL_TIMEOUT 497
+#define MAX_WLOOPS 498
+#define PVBUFSIZE 499
+#define PVBUFSLOTS 500
+#define HTTP_REPLY_PARSE 501
+#define VERSION_TABLE_CFG 502
+#define CFG_DESCRIPTION 503
+#define SERVER_ID 504
+#define MAX_RECURSIVE_LEVEL 505
+#define MAX_BRANCHES_PARAM 506
+#define LATENCY_LOG 507
+#define LATENCY_LIMIT_DB 508
+#define LATENCY_LIMIT_ACTION 509
+#define MSG_TIME 510
+#define ONSEND_RT_REPLY 511
+#define FLAGS_DECL 512
+#define AVPFLAGS_DECL 513
+#define ATTR_MARK 514
+#define SELECT_MARK 515
+#define ATTR_FROM 516
+#define ATTR_TO 517
+#define ATTR_FROMURI 518
+#define ATTR_TOURI 519
+#define ATTR_FROMUSER 520
+#define ATTR_TOUSER 521
+#define ATTR_FROMDOMAIN 522
+#define ATTR_TODOMAIN 523
+#define ATTR_GLOBAL 524
+#define ADDEQ 525
+#define SUBST 526
+#define SUBSTDEF 527
+#define SUBSTDEFS 528
+#define EQUAL 529
+#define LOG_OR 530
+#define LOG_AND 531
+#define BIN_OR 532
+#define BIN_AND 533
+#define BIN_XOR 534
+#define BIN_LSHIFT 535
+#define BIN_RSHIFT 536
+#define STRDIFF 537
+#define STREQ 538
+#define INTDIFF 539
+#define INTEQ 540
+#define MATCH 541
+#define DIFF 542
+#define EQUAL_T 543
+#define LTE 544
+#define GTE 545
+#define LT 546
+#define GT 547
+#define MINUS 548
+#define PLUS 549
+#define MODULO 550
+#define SLASH 551
+#define STAR 552
+#define BIN_NOT 553
+#define UNARY 554
+#define NOT 555
+#define DEFINED 556
+#define STRCAST 557
+#define INTCAST 558
+#define DOT 559
+#define STRLEN 560
+#define STREMPTY 561
+#define NUMBER 562
+#define ID 563
+#define NUM_ID 564
+#define STRING 565
+#define IPV6ADDR 566
+#define PVAR 567
+#define AVP_OR_PVAR 568
+#define EVENT_RT_NAME 569
+#define COMMA 570
+#define SEMICOLON 571
+#define RPAREN 572
+#define LPAREN 573
+#define LBRACE 574
+#define RBRACE 575
+#define LBRACK 576
+#define RBRACK 577
+#define CR 578
+#define COLON 579
+
+
+
+
+#if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
+typedef union YYSTYPE
+#line 198 "cfg.y"
+{
+	long intval;
+	unsigned long uval;
+	char* strval;
+	struct expr* expr;
+	struct action* action;
+	struct case_stms* case_stms;
+	struct net* ipnet;
+	struct ip_addr* ipaddr;
+	struct socket_id* sockid;
+	struct name_lst* name_l;
+	struct avp_spec* attr;
+	struct _pv_spec* pvar;
+	struct lvalue* lval;
+	struct rvalue* rval;
+	struct rval_expr* rv_expr;
+	select_t* select;
+}
+/* Line 1529 of yacc.c.  */
+#line 716 "cfg.tab.h"
+	YYSTYPE;
+# define yystype YYSTYPE /* obsolescent; will be withdrawn */
+# define YYSTYPE_IS_DECLARED 1
+# define YYSTYPE_IS_TRIVIAL 1
+#endif
+
+extern YYSTYPE yylval;
+

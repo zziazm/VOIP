@@ -1,0 +1,631 @@
+Makefile:107: config.mak: No such file or directory
+target architecture <x86_64>, host architecture <x86_64>
+generating autover.h ...
+making config...
+CC (gcc) [kamailio]		action.o
+CC (gcc) [kamailio]		async_task.o
+CC (gcc) [kamailio]		atomic_ops.o
+CC (gcc) [kamailio]		basex.o
+CC (gcc) [kamailio]		bit_count.o
+CC (gcc) [kamailio]		bit_scan.o
+CC (gcc) [kamailio]		cfg_core.o
+CC (gcc) [kamailio]		cfg_parser.o
+CC (gcc) [kamailio]		core_cmd.o
+CC (gcc) [kamailio]		counters.o
+CC (gcc) [kamailio]		crc.o
+CC (gcc) [kamailio]		daemonize.o
+CC (gcc) [kamailio]		data_lump.o
+CC (gcc) [kamailio]		data_lump_rpl.o
+CC (gcc) [kamailio]		dns_cache.o
+CC (gcc) [kamailio]		dns_func.o
+CC (gcc) [kamailio]		dprint.o
+CC (gcc) [kamailio]		dset.o
+CC (gcc) [kamailio]		dst_blacklist.o
+CC (gcc) [kamailio]		endianness.o
+CC (gcc) [kamailio]		error.o
+CC (gcc) [kamailio]		events.o
+CC (gcc) [kamailio]		flags.o
+CC (gcc) [kamailio]		fmsg.o
+CC (gcc) [kamailio]		forward.o
+CC (gcc) [kamailio]		hash_func.o
+CC (gcc) [kamailio]		id.o
+CC (gcc) [kamailio]		io_wait.o
+CC (gcc) [kamailio]		ip_addr.o
+CC (gcc) [kamailio]		local_timer.o
+CC (gcc) [kamailio]		lock_ops.o
+CC (gcc) [kamailio]		lvalue.o
+CC (gcc) [kamailio]		main.o
+CC (gcc) [kamailio]		md5.o
+CC (gcc) [kamailio]		md5utils.o
+CC (gcc) [kamailio]		mod_fix.o
+CC (gcc) [kamailio]		modparam.o
+CC (gcc) [kamailio]		msg_translator.o
+CC (gcc) [kamailio]		nonsip_hooks.o
+CC (gcc) [kamailio]		pass_fd.o
+CC (gcc) [kamailio]		ppcfg.o
+CC (gcc) [kamailio]		proxy.o
+CC (gcc) [kamailio]		pt.o
+CC (gcc) [kamailio]		pv_core.o
+CC (gcc) [kamailio]		pvapi.o
+CC (gcc) [kamailio]		qvalue.o
+CC (gcc) [kamailio]		raw_listener.o
+CC (gcc) [kamailio]		raw_sock.o
+CC (gcc) [kamailio]		re.o
+CC (gcc) [kamailio]		receive.o
+CC (gcc) [kamailio]		resolve.o
+CC (gcc) [kamailio]		route.o
+CC (gcc) [kamailio]		route_struct.o
+CC (gcc) [kamailio]		rpc_lookup.o
+CC (gcc) [kamailio]		rvalue.o
+CC (gcc) [kamailio]		script_cb.o
+CC (gcc) [kamailio]		sctp_core.o
+CC (gcc) [kamailio]		select.o
+CC (gcc) [kamailio]		select_buf.o
+CC (gcc) [kamailio]		select_core.o
+CC (gcc) [kamailio]		shm_init.o
+CC (gcc) [kamailio]		signals.o
+CC (gcc) [kamailio]		sip_msg_clone.o
+CC (gcc) [kamailio]		sock_ut.o
+CC (gcc) [kamailio]		socket_info.o
+CC (gcc) [kamailio]		sr_compat.o
+CC (gcc) [kamailio]		sr_module.o
+CC (gcc) [kamailio]		srapi.o
+CC (gcc) [kamailio]		stats.o
+CC (gcc) [kamailio]		str.o
+CC (gcc) [kamailio]		str_list.o
+CC (gcc) [kamailio]		stun.o
+CC (gcc) [kamailio]		switch.o
+CC (gcc) [kamailio]		tcp_main.o
+CC (gcc) [kamailio]		tcp_options.o
+CC (gcc) [kamailio]		tcp_read.o
+CC (gcc) [kamailio]		tcp_stats.o
+CC (gcc) [kamailio]		timer.o
+CC (gcc) [kamailio]		timer_proc.o
+CC (gcc) [kamailio]		tls_hooks.o
+CC (gcc) [kamailio]		tsend.o
+CC (gcc) [kamailio]		udp_server.o
+CC (gcc) [kamailio]		usr_avp.o
+CC (gcc) [kamailio]		ut.o
+CC (gcc) [kamailio]		ver.o
+CC (gcc) [kamailio]		xavp.o
+CC (gcc) [kamailio]		mem/dl_malloc.o
+CC (gcc) [kamailio]		mem/f_malloc.o
+CC (gcc) [kamailio]		mem/ll_malloc.o
+CC (gcc) [kamailio]		mem/mem.o
+CC (gcc) [kamailio]		mem/memtest.o
+CC (gcc) [kamailio]		mem/pkg.o
+CC (gcc) [kamailio]		mem/q_malloc.o
+CC (gcc) [kamailio]		mem/sf_malloc.o
+CC (gcc) [kamailio]		mem/shm.o
+CC (gcc) [kamailio]		mem/shm_mem.o
+CC (gcc) [kamailio]		mem/tlsf_malloc.o
+CC (gcc) [kamailio]		parser/hf.o
+CC (gcc) [kamailio]		parser/msg_parser.o
+CC (gcc) [kamailio]		parser/parse_addr_spec.o
+CC (gcc) [kamailio]		parser/parse_allow.o
+CC (gcc) [kamailio]		parser/parse_body.o
+CC (gcc) [kamailio]		parser/parse_content.o
+CC (gcc) [kamailio]		parser/parse_cseq.o
+CC (gcc) [kamailio]		parser/parse_date.o
+CC (gcc) [kamailio]		parser/parse_disposition.o
+CC (gcc) [kamailio]		parser/parse_diversion.o
+CC (gcc) [kamailio]		parser/parse_event.o
+CC (gcc) [kamailio]		parser/parse_expires.o
+CC (gcc) [kamailio]		parser/parse_fline.o
+CC (gcc) [kamailio]		parser/parse_from.o
+CC (gcc) [kamailio]		parser/parse_hname2.o
+CC (gcc) [kamailio]		parser/parse_hostport.o
+CC (gcc) [kamailio]		parser/parse_identity.o
+CC (gcc) [kamailio]		parser/parse_identityinfo.o
+CC (gcc) [kamailio]		parser/parse_methods.o
+CC (gcc) [kamailio]		parser/parse_nameaddr.o
+CC (gcc) [kamailio]		parser/parse_option_tags.o
+CC (gcc) [kamailio]		parser/parse_param.o
+CC (gcc) [kamailio]		parser/parse_ppi_pai.o
+CC (gcc) [kamailio]		parser/parse_refer_to.o
+CC (gcc) [kamailio]		parser/parse_require.o
+CC (gcc) [kamailio]		parser/parse_retry_after.o
+CC (gcc) [kamailio]		parser/parse_rpid.o
+CC (gcc) [kamailio]		parser/parse_rr.o
+CC (gcc) [kamailio]		parser/parse_sipifmatch.o
+CC (gcc) [kamailio]		parser/parse_subscription_state.o
+CC (gcc) [kamailio]		parser/parse_supported.o
+CC (gcc) [kamailio]		parser/parse_to.o
+CC (gcc) [kamailio]		parser/parse_uri.o
+CC (gcc) [kamailio]		parser/parse_via.o
+CC (gcc) [kamailio]		parser/parser_f.o
+CC (gcc) [kamailio]		parser/digest/digest.o
+CC (gcc) [kamailio]		parser/digest/digest_parser.o
+CC (gcc) [kamailio]		parser/digest/param_parser.o
+CC (gcc) [kamailio]		parser/contact/contact.o
+CC (gcc) [kamailio]		parser/contact/parse_contact.o
+CC (gcc) [kamailio]		parser/sdp/sdp.o
+CC (gcc) [kamailio]		parser/sdp/sdp_helpr_funcs.o
+CC (gcc) [kamailio]		rand/fastrand.o
+CC (gcc) [kamailio]		rand/isaac/rand.o
+CC (gcc) [kamailio]		cfg/cfg.o
+CC (gcc) [kamailio]		cfg/cfg_ctx.o
+CC (gcc) [kamailio]		cfg/cfg_script.o
+CC (gcc) [kamailio]		cfg/cfg_select.o
+CC (gcc) [kamailio]		cfg/cfg_struct.o
+yacc -d -b cfg cfg.y
+flex cfg.lex
+CC (gcc) [kamailio]		lex.yy.o
+CC (gcc) [kamailio]		cfg.tab.o
+LD (gcc) [kamailio]		kamailio
+CC (gcc) [M async.so]		async_mod.o
+CC (gcc) [M async.so]		async_sleep.o
+LD (gcc) [M async.so]		async.so
+CC (gcc) [M auth.so]		api.o
+CC (gcc) [M auth.so]		auth_mod.o
+CC (gcc) [M auth.so]		challenge.o
+CC (gcc) [M auth.so]		nc.o
+CC (gcc) [M auth.so]		nid.o
+CC (gcc) [M auth.so]		nonce.o
+CC (gcc) [M auth.so]		ot_nonce.o
+CC (gcc) [M auth.so]		rfc2617.o
+LD (gcc) [M auth.so]		auth.so
+CC (gcc) [M benchmark.so]		benchmark.o
+CC (gcc) [L libkmi.1.0.0.dylib]		attr.o
+CC (gcc) [L libkmi.1.0.0.dylib]		fmt.o
+CC (gcc) [L libkmi.1.0.0.dylib]		mi.o
+CC (gcc) [L libkmi.1.0.0.dylib]		tree.o
+LD (gcc) [L libkmi.1.0.0.dylib]		libkmi.1.0.0.dylib
+LD (gcc) [M benchmark.so]		benchmark.so
+CC (gcc) [M blst.so]		blst.o
+LD (gcc) [M blst.so]		blst.so
+CC (gcc) [M cfg_rpc.so]		cfg_rpc.o
+LD (gcc) [M cfg_rpc.so]		cfg_rpc.so
+CC (gcc) [M cfgutils.so]		cfgutils.o
+make[2]: `libkmi.1.0.0.dylib' is up to date.
+CC (gcc) [L libkcore.1.0.0.dylib]		cmpapi.o
+CC (gcc) [L libkcore.1.0.0.dylib]		kstats_wrapper.o
+CC (gcc) [L libkcore.1.0.0.dylib]		parse_privacy.o
+CC (gcc) [L libkcore.1.0.0.dylib]		parse_sst.o
+CC (gcc) [L libkcore.1.0.0.dylib]		regexp.o
+CC (gcc) [L libkcore.1.0.0.dylib]		statistics.o
+CC (gcc) [L libkcore.1.0.0.dylib]		strcommon.o
+LD (gcc) [L libkcore.1.0.0.dylib]		libkcore.1.0.0.dylib
+LD (gcc) [M cfgutils.so]		cfgutils.so
+CC (gcc) [M corex.so]		corex_lib.o
+CC (gcc) [M corex.so]		corex_mod.o
+CC (gcc) [M corex.so]		corex_nio.o
+CC (gcc) [M corex.so]		corex_rpc.o
+CC (gcc) [M corex.so]		corex_var.o
+LD (gcc) [M corex.so]		corex.so
+CC (gcc) [M counters.so]		counters.o
+LD (gcc) [M counters.so]		counters.so
+CC (gcc) [M ctl.so]		binrpc.o
+CC (gcc) [M ctl.so]		binrpc_run.o
+CC (gcc) [M ctl.so]		ctl.o
+CC (gcc) [M ctl.so]		ctrl_socks.o
+CC (gcc) [M ctl.so]		fifo_server.o
+CC (gcc) [M ctl.so]		init_socks.o
+CC (gcc) [M ctl.so]		io_listener.o
+LD (gcc) [M ctl.so]		ctl.so
+CC (gcc) [M debugger.so]		debugger_act.o
+CC (gcc) [M debugger.so]		debugger_api.o
+CC (gcc) [M debugger.so]		debugger_config.o
+CC (gcc) [M debugger.so]		debugger_json.o
+CC (gcc) [M debugger.so]		debugger_mod.o
+CC (gcc) [L libsrutils.1.0.0.dylib]		sha256.o
+CC (gcc) [L libsrutils.1.0.0.dylib]		shautils.o
+CC (gcc) [L libsrutils.1.0.0.dylib]		srjson.o
+CC (gcc) [L libsrutils.1.0.0.dylib]		sruid.o
+CC (gcc) [L libsrutils.1.0.0.dylib]		tmrec.o
+LD (gcc) [L libsrutils.1.0.0.dylib]		libsrutils.1.0.0.dylib
+make[2]: `libkmi.1.0.0.dylib' is up to date.
+LD (gcc) [M debugger.so]		debugger.so
+CC (gcc) [M diversion.so]		diversion.o
+LD (gcc) [M diversion.so]		diversion.so
+CC (gcc) [M enum.so]		enum.o
+CC (gcc) [M enum.so]		enum_mod.o
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M enum.so]		enum.so
+CC (gcc) [M exec.so]		exec.o
+CC (gcc) [M exec.so]		exec_hf.o
+CC (gcc) [M exec.so]		exec_mod.o
+CC (gcc) [M exec.so]		kill.o
+LD (gcc) [M exec.so]		exec.so
+CC (gcc) [M ipops.so]		api.o
+CC (gcc) [M ipops.so]		ip_parser.o
+CC (gcc) [M ipops.so]		ipops_mod.o
+CC (gcc) [M ipops.so]		ipops_pv.o
+CC (gcc) [M ipops.so]		rfc1918_parser.o
+LD (gcc) [M ipops.so]		ipops.so
+CC (gcc) [M kex.so]		core_stats.o
+CC (gcc) [M kex.so]		flags.o
+CC (gcc) [M kex.so]		kex_mod.o
+CC (gcc) [M kex.so]		km_core.o
+CC (gcc) [M kex.so]		mi_core.o
+CC (gcc) [M kex.so]		mod_stats.o
+CC (gcc) [M kex.so]		pkg_stats.o
+make[2]: `libkmi.1.0.0.dylib' is up to date.
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+make[2]: `libsrutils.1.0.0.dylib' is up to date.
+LD (gcc) [M kex.so]		kex.so
+CC (gcc) [M mangler.so]		contact_ops.o
+CC (gcc) [M mangler.so]		ip_helper.o
+CC (gcc) [M mangler.so]		mangler.o
+CC (gcc) [M mangler.so]		sdp_mangler.o
+CC (gcc) [M mangler.so]		utils.o
+LD (gcc) [M mangler.so]		mangler.so
+CC (gcc) [M maxfwd.so]		maxfwd.o
+CC (gcc) [M maxfwd.so]		mf_funcs.o
+LD (gcc) [M maxfwd.so]		maxfwd.so
+CC (gcc) [M mediaproxy.so]		mediaproxy.o
+LD (gcc) [M mediaproxy.so]		mediaproxy.so
+CC (gcc) [M mi_datagram.so]		datagram_fnc.o
+CC (gcc) [M mi_datagram.so]		mi_datagram.o
+CC (gcc) [M mi_datagram.so]		mi_datagram_parser.o
+CC (gcc) [M mi_datagram.so]		mi_datagram_writer.o
+make[2]: `libkmi.1.0.0.dylib' is up to date.
+LD (gcc) [M mi_datagram.so]		mi_datagram.so
+CC (gcc) [M mi_fifo.so]		fifo_fnc.o
+CC (gcc) [M mi_fifo.so]		mi_fifo.o
+CC (gcc) [M mi_fifo.so]		mi_parser.o
+CC (gcc) [M mi_fifo.so]		mi_writer.o
+make[2]: `libkmi.1.0.0.dylib' is up to date.
+LD (gcc) [M mi_fifo.so]		mi_fifo.so
+CC (gcc) [M mi_rpc.so]		mi_rpc_mod.o
+make[2]: `libkmi.1.0.0.dylib' is up to date.
+CC (gcc) [L libbinrpc.0.1.0.dylib]		binrpc_api.o
+LD (gcc) [L libbinrpc.0.1.0.dylib]		libbinrpc.0.1.0.dylib
+LD (gcc) [M mi_rpc.so]		mi_rpc.so
+CC (gcc) [M mqueue.so]		mqueue_api.o
+CC (gcc) [M mqueue.so]		mqueue_mod.o
+make[2]: `libkmi.1.0.0.dylib' is up to date.
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M mqueue.so]		mqueue.so
+CC (gcc) [M nat_traversal.so]		nat_traversal.o
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M nat_traversal.so]		nat_traversal.so
+CC (gcc) [M nathelper.so]		nathelper.o
+CC (gcc) [M nathelper.so]		nhelpr_funcs.o
+make[2]: `libkmi.1.0.0.dylib' is up to date.
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M nathelper.so]		nathelper.so
+CC (gcc) [M path.so]		path.o
+CC (gcc) [M path.so]		path_mod.o
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M path.so]		path.so
+CC (gcc) [M pike.so]		ip_tree.o
+CC (gcc) [M pike.so]		pike.o
+CC (gcc) [M pike.so]		pike_funcs.o
+CC (gcc) [M pike.so]		pike_mi.o
+CC (gcc) [M pike.so]		pike_rpc.o
+CC (gcc) [M pike.so]		pike_top.o
+CC (gcc) [M pike.so]		timer.o
+make[2]: `libkmi.1.0.0.dylib' is up to date.
+LD (gcc) [M pike.so]		pike.so
+CC (gcc) [M pv.so]		pv.o
+CC (gcc) [M pv.so]		pv_api.o
+CC (gcc) [M pv.so]		pv_branch.o
+CC (gcc) [M pv.so]		pv_core.o
+CC (gcc) [M pv.so]		pv_select.o
+CC (gcc) [M pv.so]		pv_shv.o
+CC (gcc) [M pv.so]		pv_stats.o
+CC (gcc) [M pv.so]		pv_svar.o
+CC (gcc) [M pv.so]		pv_time.o
+CC (gcc) [M pv.so]		pv_trans.o
+CC (gcc) [M pv.so]		pv_xavp.o
+make[2]: `libkmi.1.0.0.dylib' is up to date.
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+make[2]: `libsrutils.1.0.0.dylib' is up to date.
+LD (gcc) [M pv.so]		pv.so
+CC (gcc) [M ratelimit.so]		ratelimit.o
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M ratelimit.so]		ratelimit.so
+CC (gcc) [M rr.so]		api.o
+CC (gcc) [M rr.so]		loose.o
+CC (gcc) [M rr.so]		record.o
+CC (gcc) [M rr.so]		rr_cb.o
+CC (gcc) [M rr.so]		rr_mod.o
+LD (gcc) [M rr.so]		rr.so
+CC (gcc) [M rtimer.so]		rtimer_mod.o
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M rtimer.so]		rtimer.so
+CC (gcc) [M rtpproxy.so]		rtpproxy.o
+CC (gcc) [M rtpproxy.so]		rtpproxy_db.o
+CC (gcc) [M rtpproxy.so]		rtpproxy_funcs.o
+CC (gcc) [M rtpproxy.so]		rtpproxy_stream.o
+make[2]: `libkmi.1.0.0.dylib' is up to date.
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+CC (gcc) [L libsrdb1.1.0.0.dylib]		db.o
+CC (gcc) [L libsrdb1.1.0.0.dylib]		db_id.o
+CC (gcc) [L libsrdb1.1.0.0.dylib]		db_pool.o
+CC (gcc) [L libsrdb1.1.0.0.dylib]		db_query.o
+CC (gcc) [L libsrdb1.1.0.0.dylib]		db_res.o
+CC (gcc) [L libsrdb1.1.0.0.dylib]		db_row.o
+CC (gcc) [L libsrdb1.1.0.0.dylib]		db_ut.o
+CC (gcc) [L libsrdb1.1.0.0.dylib]		db_val.o
+LD (gcc) [L libsrdb1.1.0.0.dylib]		libsrdb1.1.0.0.dylib
+LD (gcc) [M rtpproxy.so]		rtpproxy.so
+CC (gcc) [M sanity.so]		mod_sanity.o
+CC (gcc) [M sanity.so]		sanity.o
+LD (gcc) [M sanity.so]		sanity.so
+CC (gcc) [M sdpops.so]		sdpops_data.o
+CC (gcc) [M sdpops.so]		sdpops_mod.o
+LD (gcc) [M sdpops.so]		sdpops.so
+CC (gcc) [M siputils.so]		chargingvector.o
+CC (gcc) [M siputils.so]		checks.o
+CC (gcc) [M siputils.so]		config.o
+CC (gcc) [M siputils.so]		contact_ops.o
+CC (gcc) [M siputils.so]		options.o
+CC (gcc) [M siputils.so]		ring.o
+CC (gcc) [M siputils.so]		rpid.o
+CC (gcc) [M siputils.so]		sipops.o
+CC (gcc) [M siputils.so]		siputils.o
+CC (gcc) [M siputils.so]		utils.o
+make[2]: `libsrdb1.1.0.0.dylib' is up to date.
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M siputils.so]		siputils.so
+CC (gcc) [M sl.so]		sl.o
+CC (gcc) [M sl.so]		sl_funcs.o
+CC (gcc) [M sl.so]		sl_stats.o
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M sl.so]		sl.so
+CC (gcc) [M statistics.so]		statistics.o
+CC (gcc) [M statistics.so]		stats_funcs.o
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M statistics.so]		statistics.so
+CC (gcc) [M textops.so]		api.o
+CC (gcc) [M textops.so]		textops.o
+CC (gcc) [M textops.so]		txt_var.o
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M textops.so]		textops.so
+CC (gcc) [M textopsx.so]		textopsx.o
+LD (gcc) [M textopsx.so]		textopsx.so
+CC (gcc) [M tm.so]		callid.o
+CC (gcc) [M tm.so]		config.o
+CC (gcc) [M tm.so]		dlg.o
+CC (gcc) [M tm.so]		h_table.o
+CC (gcc) [M tm.so]		lock.o
+CC (gcc) [M tm.so]		lw_parser.o
+CC (gcc) [M tm.so]		rpc_uac.o
+CC (gcc) [M tm.so]		select.o
+CC (gcc) [M tm.so]		sip_msg.o
+CC (gcc) [M tm.so]		t_append_branches.o
+CC (gcc) [M tm.so]		t_cancel.o
+CC (gcc) [M tm.so]		t_fifo.o
+CC (gcc) [M tm.so]		t_funcs.o
+CC (gcc) [M tm.so]		t_fwd.o
+CC (gcc) [M tm.so]		t_hooks.o
+CC (gcc) [M tm.so]		t_lookup.o
+CC (gcc) [M tm.so]		t_msgbuilder.o
+CC (gcc) [M tm.so]		t_reply.o
+CC (gcc) [M tm.so]		t_serial.o
+CC (gcc) [M tm.so]		t_stats.o
+CC (gcc) [M tm.so]		t_suspend.o
+CC (gcc) [M tm.so]		test.o
+CC (gcc) [M tm.so]		timer.o
+CC (gcc) [M tm.so]		tm.o
+CC (gcc) [M tm.so]		tm_load.o
+CC (gcc) [M tm.so]		uac.o
+LD (gcc) [M tm.so]		tm.so
+CC (gcc) [M tmx.so]		t_mi.o
+CC (gcc) [M tmx.so]		t_var.o
+CC (gcc) [M tmx.so]		tmx_mod.o
+CC (gcc) [M tmx.so]		tmx_pretran.o
+make[2]: `libkmi.1.0.0.dylib' is up to date.
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M tmx.so]		tmx.so
+CC (gcc) [M topoh.so]		th_mask.o
+CC (gcc) [M topoh.so]		th_msg.o
+CC (gcc) [M topoh.so]		topoh_mod.o
+LD (gcc) [M topoh.so]		topoh.so
+CC (gcc) [M xlog.so]		xl_lib.o
+CC (gcc) [M xlog.so]		xlog.o
+LD (gcc) [M xlog.so]		xlog.so
+CC (gcc) [M rtpengine.so]		bencode.o
+CC (gcc) [M rtpengine.so]		rtpengine.o
+CC (gcc) [M rtpengine.so]		rtpengine_db.o
+CC (gcc) [M rtpengine.so]		rtpengine_funcs.o
+CC (gcc) [M rtpengine.so]		rtpengine_hash.o
+make[2]: `libkmi.1.0.0.dylib' is up to date.
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+make[2]: `libsrdb1.1.0.0.dylib' is up to date.
+LD (gcc) [M rtpengine.so]		rtpengine.so
+CC (gcc) [M stun.so]		config.o
+CC (gcc) [M stun.so]		kam_stun.o
+CC (gcc) [M stun.so]		stun_mod.o
+LD (gcc) [M stun.so]		stun.so
+CC (gcc) [M sipt.so]		sdp_mangle.o
+CC (gcc) [M sipt.so]		sipt.o
+CC (gcc) [M sipt.so]		ss7_parser.o
+LD (gcc) [M sipt.so]		sipt.so
+CC (gcc) [M tcpops.so]		tcpops.o
+tcpops.c:106:3: warning: "TCP keepalive is not fully supported by your platform" [-W#warnings]
+        #warning "TCP keepalive is not fully supported by your platform"
+         ^
+1 warning generated.
+tcpops.c:106:3: warning: "TCP keepalive is not fully supported by your platform" [-W#warnings]
+        #warning "TCP keepalive is not fully supported by your platform"
+         ^
+1 warning generated.
+CC (gcc) [M tcpops.so]		tcpops_mod.o
+LD (gcc) [M tcpops.so]		tcpops.so
+CC (gcc) [M auth_xkeys.so]		auth_xkeys.o
+CC (gcc) [M auth_xkeys.so]		auth_xkeys_mod.o
+make[2]: `libsrutils.1.0.0.dylib' is up to date.
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M auth_xkeys.so]		auth_xkeys.so
+CC (gcc) [M smsops.so]		smsops.o
+CC (gcc) [M smsops.so]		smsops_impl.o
+make[2]: `libkmi.1.0.0.dylib' is up to date.
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+make[2]: `libsrutils.1.0.0.dylib' is up to date.
+LD (gcc) [M smsops.so]		smsops.so
+CC (gcc) [M tsilo.so]		ts_append.o
+CC (gcc) [M tsilo.so]		ts_handlers.o
+CC (gcc) [M tsilo.so]		ts_hash.o
+CC (gcc) [M tsilo.so]		ts_rpc.o
+CC (gcc) [M tsilo.so]		ts_store.o
+CC (gcc) [M tsilo.so]		tsilo.o
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M tsilo.so]		tsilo.so
+CC (gcc) [M cfgt.so]		cfgt.o
+CC (gcc) [M cfgt.so]		cfgt_int.o
+CC (gcc) [M cfgt.so]		cfgt_json.o
+CC (gcc) [M cfgt.so]		cfgt_mod.o
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+make[2]: `libsrutils.1.0.0.dylib' is up to date.
+LD (gcc) [M cfgt.so]		cfgt.so
+CC (gcc) [M statsc.so]		statsc_mod.o
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M statsc.so]		statsc.so
+CC (gcc) [M topos.so]		topos_mod.o
+CC (gcc) [M topos.so]		tps_msg.o
+CC (gcc) [M topos.so]		tps_storage.o
+make[2]: `libsrdb1.1.0.0.dylib' is up to date.
+make[2]: `libsrutils.1.0.0.dylib' is up to date.
+LD (gcc) [M topos.so]		topos.so
+CC (gcc) [M avp.so]		avp.o
+LD (gcc) [M avp.so]		avp.so
+CC (gcc) [M auth_diameter.so]		auth_diameter.o
+CC (gcc) [M auth_diameter.so]		authorize.o
+CC (gcc) [M auth_diameter.so]		avp.o
+CC (gcc) [M auth_diameter.so]		message.o
+CC (gcc) [M auth_diameter.so]		tcp_comm.o
+CC (gcc) [M auth_diameter.so]		user_in.o
+LD (gcc) [M auth_diameter.so]		auth_diameter.so
+CC (gcc) [M call_control.so]		call_control.o
+LD (gcc) [M call_control.so]		call_control.so
+CC (gcc) [M dmq.so]		bind_dmq.o
+CC (gcc) [M dmq.so]		dmq.o
+CC (gcc) [M dmq.so]		dmq_funcs.o
+CC (gcc) [M dmq.so]		dmqnode.o
+CC (gcc) [M dmq.so]		message.o
+CC (gcc) [M dmq.so]		notification_peer.o
+CC (gcc) [M dmq.so]		peer.o
+CC (gcc) [M dmq.so]		worker.o
+make[2]: `libkmi.1.0.0.dylib' is up to date.
+make[2]: `libsrdb1.1.0.0.dylib' is up to date.
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M dmq.so]		dmq.so
+CC (gcc) [M domainpolicy.so]		domainpolicy.o
+CC (gcc) [M domainpolicy.so]		domainpolicy_mod.o
+make[2]: `libsrdb1.1.0.0.dylib' is up to date.
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M domainpolicy.so]		domainpolicy.so
+CC (gcc) [M msrp.so]		msrp_cmap.o
+CC (gcc) [M msrp.so]		msrp_env.o
+CC (gcc) [M msrp.so]		msrp_mod.o
+CC (gcc) [M msrp.so]		msrp_netio.o
+CC (gcc) [M msrp.so]		msrp_parser.o
+CC (gcc) [M msrp.so]		msrp_vars.o
+make[2]: `libsrutils.1.0.0.dylib' is up to date.
+LD (gcc) [M msrp.so]		msrp.so
+CC (gcc) [M pdb.so]		pdb.o
+make[2]: `libkmi.1.0.0.dylib' is up to date.
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M pdb.so]		pdb.so
+CC (gcc) [M qos.so]		qos.o
+CC (gcc) [M qos.so]		qos_cb.o
+CC (gcc) [M qos.so]		qos_ctx_helpers.o
+CC (gcc) [M qos.so]		qos_handlers.o
+CC (gcc) [M qos.so]		qos_mi.o
+make[2]: `libkmi.1.0.0.dylib' is up to date.
+LD (gcc) [M qos.so]		qos.so
+CC (gcc) [M sca.so]		sca.o
+CC (gcc) [M sca.so]		sca_appearance.o
+CC (gcc) [M sca.so]		sca_call_info.o
+CC (gcc) [M sca.so]		sca_db.o
+CC (gcc) [M sca.so]		sca_dialog.o
+CC (gcc) [M sca.so]		sca_event.o
+CC (gcc) [M sca.so]		sca_hash.o
+CC (gcc) [M sca.so]		sca_notify.o
+CC (gcc) [M sca.so]		sca_reply.o
+CC (gcc) [M sca.so]		sca_rpc.o
+CC (gcc) [M sca.so]		sca_subscribe.o
+CC (gcc) [M sca.so]		sca_util.o
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+make[2]: `libsrdb1.1.0.0.dylib' is up to date.
+LD (gcc) [M sca.so]		sca.so
+CC (gcc) [M seas.so]		cluster.o
+CC (gcc) [M seas.so]		encode_allow.o
+CC (gcc) [M seas.so]		encode_contact.o
+CC (gcc) [M seas.so]		encode_content_disposition.o
+CC (gcc) [M seas.so]		encode_content_length.o
+CC (gcc) [M seas.so]		encode_content_type.o
+CC (gcc) [M seas.so]		encode_cseq.o
+CC (gcc) [M seas.so]		encode_digest.o
+CC (gcc) [M seas.so]		encode_expires.o
+CC (gcc) [M seas.so]		encode_header.o
+CC (gcc) [M seas.so]		encode_msg.o
+CC (gcc) [M seas.so]		encode_parameters.o
+CC (gcc) [M seas.so]		encode_route.o
+CC (gcc) [M seas.so]		encode_to_body.o
+CC (gcc) [M seas.so]		encode_uri.o
+CC (gcc) [M seas.so]		encode_via.o
+CC (gcc) [M seas.so]		event_dispatcher.o
+CC (gcc) [M seas.so]		ha.o
+CC (gcc) [M seas.so]		seas.o
+CC (gcc) [M seas.so]		seas_action.o
+CC (gcc) [M seas.so]		statistics.o
+CC (gcc) [M seas.so]		utils.o
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M seas.so]		seas.so
+CC (gcc) [M sms.so]		libsms_charset.o
+CC (gcc) [M sms.so]		libsms_getsms.o
+CC (gcc) [M sms.so]		libsms_modem.o
+CC (gcc) [M sms.so]		libsms_putsms.o
+CC (gcc) [M sms.so]		sms.o
+CC (gcc) [M sms.so]		sms_funcs.o
+CC (gcc) [M sms.so]		sms_report.o
+LD (gcc) [M sms.so]		sms.so
+CC (gcc) [M sst.so]		sst.o
+CC (gcc) [M sst.so]		sst_handlers.o
+CC (gcc) [M sst.so]		sst_mi.o
+make[2]: `libkmi.1.0.0.dylib' is up to date.
+make[2]: `libkcore.1.0.0.dylib' is up to date.
+LD (gcc) [M sst.so]		sst.so
+CC (gcc) [M timer.so]		timer.o
+LD (gcc) [M timer.so]		timer.so
+CC (gcc) [M tmrec.so]		period.o
+CC (gcc) [M tmrec.so]		tmrec_mod.o
+make[2]: `libsrutils.1.0.0.dylib' is up to date.
+LD (gcc) [M tmrec.so]		tmrec.so
+CC (gcc) [M uac_redirect.so]		rd_filter.o
+CC (gcc) [M uac_redirect.so]		rd_funcs.o
+CC (gcc) [M uac_redirect.so]		uac_redirect.o
+make[2]: `libsrutils.1.0.0.dylib' is up to date.
+LD (gcc) [M uac_redirect.so]		uac_redirect.so
+CC (gcc) [M xhttp.so]		xhttp_mod.o
+CC (gcc) [M xhttp.so]		xhttp_trans.o
+LD (gcc) [M xhttp.so]		xhttp.so
+CC (gcc) [M xhttp_rpc.so]		xhttp_rpc.o
+CC (gcc) [M xhttp_rpc.so]		xhttp_rpc_fnc.o
+LD (gcc) [M xhttp_rpc.so]		xhttp_rpc.so
+CC (gcc) [M xprint.so]		xp_lib.o
+CC (gcc) [M xprint.so]		xprint.o
+LD (gcc) [M xprint.so]		xprint.so
+CC (gcc) [M jsonrpc-s.so]		jsonrpc-s_mod.o
+make[2]: `libsrutils.1.0.0.dylib' is up to date.
+LD (gcc) [M jsonrpc-s.so]		jsonrpc-s.so
+CC (gcc) [M nosip.so]		nosip_mod.o
+LD (gcc) [M nosip.so]		nosip.so
+CC (gcc) [M dmq_usrloc.so]		dmq_usrloc.o
+CC (gcc) [M dmq_usrloc.so]		usrloc_sync.o
+make[2]: `libsrutils.1.0.0.dylib' is up to date.
+LD (gcc) [M dmq_usrloc.so]		dmq_usrloc.so
+CC (gcc) [M statsd.so]		lib_statsd.o
+CC (gcc) [M statsd.so]		statsd.o
+LD (gcc) [M statsd.so]		statsd.so
+CC (gcc) [M rtjson.so]		rtjson_mod.o
+CC (gcc) [M rtjson.so]		rtjson_routing.o
+make[2]: `libsrutils.1.0.0.dylib' is up to date.
+LD (gcc) [M rtjson.so]		rtjson.so
+CC (gcc) [M log_custom.so]		log_custom_mod.o
+LD (gcc) [M log_custom.so]		log_custom.so
+CC (gcc) [M malloc_test.so]		malloc_test.o
+LD (gcc) [M malloc_test.so]		malloc_test.so
+CC (gcc) [M print.so]		print.o
+LD (gcc) [M print.so]		print.so
+CC (gcc) [M print_lib.so]		print_lib.o
+CC (gcc) [L libprint.1.2.1.dylib]		print.o
+LD (gcc) [L libprint.1.2.1.dylib]		libprint.1.2.1.dylib
+LD (gcc) [M print_lib.so]		print_lib.so
+mkdir -p /usr/local/sbin/
+mkdir: /usr/local/sbin/: Permission denied
+make: *** [/usr/local/sbin] Error 1

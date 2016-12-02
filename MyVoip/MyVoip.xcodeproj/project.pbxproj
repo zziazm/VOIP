@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		984C842B1DF155D90041EC8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 984C842A1DF155D90041EC8A /* main.m */; };
+		984C842E1DF155D90041EC8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 984C842D1DF155D90041EC8A /* AppDelegate.m */; };
+		984C84311DF155D90041EC8A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 984C84301DF155D90041EC8A /* ViewController.m */; };
+		984C84341DF155D90041EC8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 984C84321DF155D90041EC8A /* Main.storyboard */; };
+		984C84361DF155D90041EC8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 984C84351DF155D90041EC8A /* Assets.xcassets */; };
+		984C84391DF155D90041EC8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 984C84371DF155D90041EC8A /* LaunchScreen.storyboard */; };
+		984C84441DF155D90041EC8A /* MyVoipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 984C84431DF155D90041EC8A /* MyVoipTests.m */; };
+		984C844F1DF155D90041EC8A /* MyVoipUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 984C844E1DF155D90041EC8A /* MyVoipUITests.m */; };
+		984C846F1DF156480041EC8A /* libg7221codec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C845D1DF156480041EC8A /* libg7221codec-arm-apple-darwin9.a */; };
+		984C84701DF156480041EC8A /* libgsmcodec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C845E1DF156480041EC8A /* libgsmcodec-arm-apple-darwin9.a */; };
+		984C84711DF156480041EC8A /* libilbccodec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C845F1DF156480041EC8A /* libilbccodec-arm-apple-darwin9.a */; };
+		984C84721DF156480041EC8A /* libpj-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C84601DF156480041EC8A /* libpj-arm-apple-darwin9.a */; };
+		984C84731DF156480041EC8A /* libpjlib-util-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C84611DF156480041EC8A /* libpjlib-util-arm-apple-darwin9.a */; };
+		984C84741DF156480041EC8A /* libpjmedia-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C84621DF156480041EC8A /* libpjmedia-arm-apple-darwin9.a */; };
+		984C84751DF156480041EC8A /* libpjmedia-audiodev-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C84631DF156480041EC8A /* libpjmedia-audiodev-arm-apple-darwin9.a */; };
+		984C84761DF156480041EC8A /* libpjmedia-codec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C84641DF156480041EC8A /* libpjmedia-codec-arm-apple-darwin9.a */; };
+		984C84771DF156480041EC8A /* libpjmedia-videodev-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C84651DF156480041EC8A /* libpjmedia-videodev-arm-apple-darwin9.a */; };
+		984C84781DF156480041EC8A /* libpjnath-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C84661DF156480041EC8A /* libpjnath-arm-apple-darwin9.a */; };
+		984C84791DF156480041EC8A /* libpjsip-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C84671DF156480041EC8A /* libpjsip-arm-apple-darwin9.a */; };
+		984C847A1DF156480041EC8A /* libpjsip-simple-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C84681DF156480041EC8A /* libpjsip-simple-arm-apple-darwin9.a */; };
+		984C847B1DF156480041EC8A /* libpjsip-ua-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C84691DF156480041EC8A /* libpjsip-ua-arm-apple-darwin9.a */; };
+		984C847C1DF156480041EC8A /* libpjsua-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C846A1DF156480041EC8A /* libpjsua-arm-apple-darwin9.a */; };
+		984C847D1DF156480041EC8A /* libpjsua2-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C846B1DF156480041EC8A /* libpjsua2-arm-apple-darwin9.a */; };
+		984C847E1DF156480041EC8A /* libresample-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C846C1DF156480041EC8A /* libresample-arm-apple-darwin9.a */; };
+		984C847F1DF156480041EC8A /* libspeex-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C846D1DF156480041EC8A /* libspeex-arm-apple-darwin9.a */; };
+		984C84801DF156480041EC8A /* libsrtp-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C846E1DF156480041EC8A /* libsrtp-arm-apple-darwin9.a */; };
+		984C86FD1DF158440041EC8A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C86FC1DF158440041EC8A /* AVFoundation.framework */; };
+		984C86FF1DF158490041EC8A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C86FE1DF158490041EC8A /* CFNetwork.framework */; };
+		984C87011DF158510041EC8A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984C87001DF158510041EC8A /* AudioToolbox.framework */; };
+		984C87041DF159980041EC8A /* XCPjsua.c in Sources */ = {isa = PBXBuildFile; fileRef = 984C87031DF159980041EC8A /* XCPjsua.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		984C84401DF155D90041EC8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 984C841E1DF155D90041EC8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 984C84251DF155D90041EC8A;
+			remoteInfo = MyVoip;
+		};
+		984C844B1DF155D90041EC8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 984C841E1DF155D90041EC8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 984C84251DF155D90041EC8A;
+			remoteInfo = MyVoip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		984C84261DF155D90041EC8A /* MyVoip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyVoip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		984C842A1DF155D90041EC8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		984C842C1DF155D90041EC8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		984C842D1DF155D90041EC8A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		984C842F1DF155D90041EC8A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		984C84301DF155D90041EC8A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		984C84331DF155D90041EC8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		984C84351DF155D90041EC8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		984C84381DF155D90041EC8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		984C843A1DF155D90041EC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		984C843F1DF155D90041EC8A /* MyVoipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyVoipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		984C84431DF155D90041EC8A /* MyVoipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyVoipTests.m; sourceTree = "<group>"; };
+		984C84451DF155D90041EC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		984C844A1DF155D90041EC8A /* MyVoipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyVoipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		984C844E1DF155D90041EC8A /* MyVoipUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyVoipUITests.m; sourceTree = "<group>"; };
+		984C84501DF155D90041EC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		984C845D1DF156480041EC8A /* libg7221codec-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libg7221codec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		984C845E1DF156480041EC8A /* libgsmcodec-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgsmcodec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		984C845F1DF156480041EC8A /* libilbccodec-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libilbccodec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		984C84601DF156480041EC8A /* libpj-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpj-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		984C84611DF156480041EC8A /* libpjlib-util-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjlib-util-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		984C84621DF156480041EC8A /* libpjmedia-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		984C84631DF156480041EC8A /* libpjmedia-audiodev-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-audiodev-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		984C84641DF156480041EC8A /* libpjmedia-codec-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-codec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		984C84651DF156480041EC8A /* libpjmedia-videodev-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-videodev-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		984C84661DF156480041EC8A /* libpjnath-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjnath-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		984C84671DF156480041EC8A /* libpjsip-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		984C84681DF156480041EC8A /* libpjsip-simple-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-simple-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		984C84691DF156480041EC8A /* libpjsip-ua-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-ua-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		984C846A1DF156480041EC8A /* libpjsua-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsua-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		984C846B1DF156480041EC8A /* libpjsua2-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsua2-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		984C846C1DF156480041EC8A /* libresample-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libresample-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		984C846D1DF156480041EC8A /* libspeex-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libspeex-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		984C846E1DF156480041EC8A /* libsrtp-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libsrtp-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		984C86FC1DF158440041EC8A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		984C86FE1DF158490041EC8A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		984C87001DF158510041EC8A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		984C87021DF159640041EC8A /* XCPjsua.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPjsua.h; sourceTree = "<group>"; };
+		984C87031DF159980041EC8A /* XCPjsua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XCPjsua.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		984C84231DF155D90041EC8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984C87011DF158510041EC8A /* AudioToolbox.framework in Frameworks */,
+				984C86FF1DF158490041EC8A /* CFNetwork.framework in Frameworks */,
+				984C86FD1DF158440041EC8A /* AVFoundation.framework in Frameworks */,
+				984C84731DF156480041EC8A /* libpjlib-util-arm-apple-darwin9.a in Frameworks */,
+				984C84721DF156480041EC8A /* libpj-arm-apple-darwin9.a in Frameworks */,
+				984C847F1DF156480041EC8A /* libspeex-arm-apple-darwin9.a in Frameworks */,
+				984C847B1DF156480041EC8A /* libpjsip-ua-arm-apple-darwin9.a in Frameworks */,
+				984C846F1DF156480041EC8A /* libg7221codec-arm-apple-darwin9.a in Frameworks */,
+				984C84781DF156480041EC8A /* libpjnath-arm-apple-darwin9.a in Frameworks */,
+				984C847E1DF156480041EC8A /* libresample-arm-apple-darwin9.a in Frameworks */,
+				984C847D1DF156480041EC8A /* libpjsua2-arm-apple-darwin9.a in Frameworks */,
+				984C84791DF156480041EC8A /* libpjsip-arm-apple-darwin9.a in Frameworks */,
+				984C84801DF156480041EC8A /* libsrtp-arm-apple-darwin9.a in Frameworks */,
+				984C84771DF156480041EC8A /* libpjmedia-videodev-arm-apple-darwin9.a in Frameworks */,
+				984C84711DF156480041EC8A /* libilbccodec-arm-apple-darwin9.a in Frameworks */,
+				984C84701DF156480041EC8A /* libgsmcodec-arm-apple-darwin9.a in Frameworks */,
+				984C84741DF156480041EC8A /* libpjmedia-arm-apple-darwin9.a in Frameworks */,
+				984C847C1DF156480041EC8A /* libpjsua-arm-apple-darwin9.a in Frameworks */,
+				984C847A1DF156480041EC8A /* libpjsip-simple-arm-apple-darwin9.a in Frameworks */,
+				984C84761DF156480041EC8A /* libpjmedia-codec-arm-apple-darwin9.a in Frameworks */,
+				984C84751DF156480041EC8A /* libpjmedia-audiodev-arm-apple-darwin9.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984C843C1DF155D90041EC8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984C84471DF155D90041EC8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		984C841D1DF155D90041EC8A = {
+			isa = PBXGroup;
+			children = (
+				984C845C1DF156350041EC8A /* Framework */,
+				984C84281DF155D90041EC8A /* MyVoip */,
+				984C84421DF155D90041EC8A /* MyVoipTests */,
+				984C844D1DF155D90041EC8A /* MyVoipUITests */,
+				984C84271DF155D90041EC8A /* Products */,
+				984C86FB1DF158440041EC8A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		984C84271DF155D90041EC8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				984C84261DF155D90041EC8A /* MyVoip.app */,
+				984C843F1DF155D90041EC8A /* MyVoipTests.xctest */,
+				984C844A1DF155D90041EC8A /* MyVoipUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		984C84281DF155D90041EC8A /* MyVoip */ = {
+			isa = PBXGroup;
+			children = (
+				984C842C1DF155D90041EC8A /* AppDelegate.h */,
+				984C842D1DF155D90041EC8A /* AppDelegate.m */,
+				984C842F1DF155D90041EC8A /* ViewController.h */,
+				984C84301DF155D90041EC8A /* ViewController.m */,
+				984C84321DF155D90041EC8A /* Main.storyboard */,
+				984C87021DF159640041EC8A /* XCPjsua.h */,
+				984C87031DF159980041EC8A /* XCPjsua.c */,
+				984C84351DF155D90041EC8A /* Assets.xcassets */,
+				984C84371DF155D90041EC8A /* LaunchScreen.storyboard */,
+				984C843A1DF155D90041EC8A /* Info.plist */,
+				984C84291DF155D90041EC8A /* Supporting Files */,
+			);
+			path = MyVoip;
+			sourceTree = "<group>";
+		};
+		984C84291DF155D90041EC8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				984C842A1DF155D90041EC8A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		984C84421DF155D90041EC8A /* MyVoipTests */ = {
+			isa = PBXGroup;
+			children = (
+				984C84431DF155D90041EC8A /* MyVoipTests.m */,
+				984C84451DF155D90041EC8A /* Info.plist */,
+			);
+			path = MyVoipTests;
+			sourceTree = "<group>";
+		};
+		984C844D1DF155D90041EC8A /* MyVoipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				984C844E1DF155D90041EC8A /* MyVoipUITests.m */,
+				984C84501DF155D90041EC8A /* Info.plist */,
+			);
+			path = MyVoipUITests;
+			sourceTree = "<group>";
+		};
+		984C845C1DF156350041EC8A /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				984C845D1DF156480041EC8A /* libg7221codec-arm-apple-darwin9.a */,
+				984C845E1DF156480041EC8A /* libgsmcodec-arm-apple-darwin9.a */,
+				984C845F1DF156480041EC8A /* libilbccodec-arm-apple-darwin9.a */,
+				984C84601DF156480041EC8A /* libpj-arm-apple-darwin9.a */,
+				984C84611DF156480041EC8A /* libpjlib-util-arm-apple-darwin9.a */,
+				984C84621DF156480041EC8A /* libpjmedia-arm-apple-darwin9.a */,
+				984C84631DF156480041EC8A /* libpjmedia-audiodev-arm-apple-darwin9.a */,
+				984C84641DF156480041EC8A /* libpjmedia-codec-arm-apple-darwin9.a */,
+				984C84651DF156480041EC8A /* libpjmedia-videodev-arm-apple-darwin9.a */,
+				984C84661DF156480041EC8A /* libpjnath-arm-apple-darwin9.a */,
+				984C84671DF156480041EC8A /* libpjsip-arm-apple-darwin9.a */,
+				984C84681DF156480041EC8A /* libpjsip-simple-arm-apple-darwin9.a */,
+				984C84691DF156480041EC8A /* libpjsip-ua-arm-apple-darwin9.a */,
+				984C846A1DF156480041EC8A /* libpjsua-arm-apple-darwin9.a */,
+				984C846B1DF156480041EC8A /* libpjsua2-arm-apple-darwin9.a */,
+				984C846C1DF156480041EC8A /* libresample-arm-apple-darwin9.a */,
+				984C846D1DF156480041EC8A /* libspeex-arm-apple-darwin9.a */,
+				984C846E1DF156480041EC8A /* libsrtp-arm-apple-darwin9.a */,
+			);
+			name = Framework;
+			path = MyVoip;
+			sourceTree = "<group>";
+		};
+		984C86FB1DF158440041EC8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				984C87001DF158510041EC8A /* AudioToolbox.framework */,
+				984C86FE1DF158490041EC8A /* CFNetwork.framework */,
+				984C86FC1DF158440041EC8A /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		984C84251DF155D90041EC8A /* MyVoip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 984C84531DF155D90041EC8A /* Build configuration list for PBXNativeTarget "MyVoip" */;
+			buildPhases = (
+				984C84221DF155D90041EC8A /* Sources */,
+				984C84231DF155D90041EC8A /* Frameworks */,
+				984C84241DF155D90041EC8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyVoip;
+			productName = MyVoip;
+			productReference = 984C84261DF155D90041EC8A /* MyVoip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		984C843E1DF155D90041EC8A /* MyVoipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 984C84561DF155D90041EC8A /* Build configuration list for PBXNativeTarget "MyVoipTests" */;
+			buildPhases = (
+				984C843B1DF155D90041EC8A /* Sources */,
+				984C843C1DF155D90041EC8A /* Frameworks */,
+				984C843D1DF155D90041EC8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				984C84411DF155D90041EC8A /* PBXTargetDependency */,
+			);
+			name = MyVoipTests;
+			productName = MyVoipTests;
+			productReference = 984C843F1DF155D90041EC8A /* MyVoipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		984C84491DF155D90041EC8A /* MyVoipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 984C84591DF155D90041EC8A /* Build configuration list for PBXNativeTarget "MyVoipUITests" */;
+			buildPhases = (
+				984C84461DF155D90041EC8A /* Sources */,
+				984C84471DF155D90041EC8A /* Frameworks */,
+				984C84481DF155D90041EC8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				984C844C1DF155D90041EC8A /* PBXTargetDependency */,
+			);
+			name = MyVoipUITests;
+			productName = MyVoipUITests;
+			productReference = 984C844A1DF155D90041EC8A /* MyVoipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		984C841E1DF155D90041EC8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = zmMac;
+				TargetAttributes = {
+					984C84251DF155D90041EC8A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4QQ73282F5;
+						ProvisioningStyle = Automatic;
+					};
+					984C843E1DF155D90041EC8A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4QQ73282F5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 984C84251DF155D90041EC8A;
+					};
+					984C84491DF155D90041EC8A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4QQ73282F5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 984C84251DF155D90041EC8A;
+					};
+				};
+			};
+			buildConfigurationList = 984C84211DF155D90041EC8A /* Build configuration list for PBXProject "MyVoip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 984C841D1DF155D90041EC8A;
+			productRefGroup = 984C84271DF155D90041EC8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				984C84251DF155D90041EC8A /* MyVoip */,
+				984C843E1DF155D90041EC8A /* MyVoipTests */,
+				984C84491DF155D90041EC8A /* MyVoipUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		984C84241DF155D90041EC8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984C84391DF155D90041EC8A /* LaunchScreen.storyboard in Resources */,
+				984C84361DF155D90041EC8A /* Assets.xcassets in Resources */,
+				984C84341DF155D90041EC8A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984C843D1DF155D90041EC8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984C84481DF155D90041EC8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		984C84221DF155D90041EC8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984C87041DF159980041EC8A /* XCPjsua.c in Sources */,
+				984C84311DF155D90041EC8A /* ViewController.m in Sources */,
+				984C842E1DF155D90041EC8A /* AppDelegate.m in Sources */,
+				984C842B1DF155D90041EC8A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984C843B1DF155D90041EC8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984C84441DF155D90041EC8A /* MyVoipTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984C84461DF155D90041EC8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984C844F1DF155D90041EC8A /* MyVoipUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		984C84411DF155D90041EC8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 984C84251DF155D90041EC8A /* MyVoip */;
+			targetProxy = 984C84401DF155D90041EC8A /* PBXContainerItemProxy */;
+		};
+		984C844C1DF155D90041EC8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 984C84251DF155D90041EC8A /* MyVoip */;
+			targetProxy = 984C844B1DF155D90041EC8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		984C84321DF155D90041EC8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				984C84331DF155D90041EC8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		984C84371DF155D90041EC8A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				984C84381DF155D90041EC8A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		984C84511DF155D90041EC8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		984C84521DF155D90041EC8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		984C84541DF155D90041EC8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4QQ73282F5;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/pjsip-include\"",
+					/Users/olympusimac/clone/VOIP/MyVoip/MyVoip/XCPjsua.c,
+				);
+				INFOPLIST_FILE = MyVoip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyVoip",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwccn.MyVoip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		984C84551DF155D90041EC8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4QQ73282F5;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/pjsip-include\"",
+					/Users/olympusimac/clone/VOIP/MyVoip/MyVoip/XCPjsua.c,
+				);
+				INFOPLIST_FILE = MyVoip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyVoip",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwccn.MyVoip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		984C84571DF155D90041EC8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4QQ73282F5;
+				INFOPLIST_FILE = MyVoipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwccn.MyVoipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyVoip.app/MyVoip";
+			};
+			name = Debug;
+		};
+		984C84581DF155D90041EC8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4QQ73282F5;
+				INFOPLIST_FILE = MyVoipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwccn.MyVoipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyVoip.app/MyVoip";
+			};
+			name = Release;
+		};
+		984C845A1DF155D90041EC8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4QQ73282F5;
+				INFOPLIST_FILE = MyVoipUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwccn.MyVoipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyVoip;
+			};
+			name = Debug;
+		};
+		984C845B1DF155D90041EC8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4QQ73282F5;
+				INFOPLIST_FILE = MyVoipUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwccn.MyVoipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyVoip;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		984C84211DF155D90041EC8A /* Build configuration list for PBXProject "MyVoip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				984C84511DF155D90041EC8A /* Debug */,
+				984C84521DF155D90041EC8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		984C84531DF155D90041EC8A /* Build configuration list for PBXNativeTarget "MyVoip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				984C84541DF155D90041EC8A /* Debug */,
+				984C84551DF155D90041EC8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		984C84561DF155D90041EC8A /* Build configuration list for PBXNativeTarget "MyVoipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				984C84571DF155D90041EC8A /* Debug */,
+				984C84581DF155D90041EC8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		984C84591DF155D90041EC8A /* Build configuration list for PBXNativeTarget "MyVoipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				984C845A1DF155D90041EC8A /* Debug */,
+				984C845B1DF155D90041EC8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 984C841E1DF155D90041EC8A /* Project object */;
+}
