@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AudioCallViewController">
+            <connections>
+                <outlet property="audioIcon" destination="146" id="156"/>
+                <outlet property="buttonAccept" destination="150" id="155"/>
+                <outlet property="buttonActions" destination="UpH-eU-PId" id="awC-Pe-36E"/>
+                <outlet property="buttonHangUpLadge" destination="163" id="164"/>
+                <outlet property="buttonHangup" destination="151" id="152"/>
+                <outlet property="buttonHangupMid" destination="159" id="162"/>
+                <outlet property="dtmfInput" destination="127" id="129"/>
+                <outlet property="labelRemoteParty" destination="93" id="106"/>
+                <outlet property="labelStatus" destination="97" id="107"/>
+                <outlet property="mRecordingLabel" destination="W16-Nd-bmb" id="Hjf-YL-OAr"/>
+                <outlet property="view" destination="91" id="123"/>
+                <outlet property="volumeContainer" destination="ODw-K8-iQp" id="oMI-9O-hMu"/>
+                <outlet property="volumeHandler" destination="CTb-1y-X9P" id="CVR-p6-hWp"/>
+                <outlet property="volumeText" destination="Ion-AG-DkX" id="2VH-zE-Xqa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="91" userLabel="UIView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="254" contentMode="scaleToFill" image="collen-back.png" id="144">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="254" contentMode="center" image="collen-logo.png" id="146">
+                    <rect key="frame" x="0.0" y="17" width="320" height="295"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Calling..." textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="97">
+                    <rect key="frame" x="2" y="294" width="316" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="0.45165020230000003" green="0.45165020230000003" blue="0.45165020230000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="255" contentMode="left" text="sip:number" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="93" userLabel="Label - 070 46011">
+                    <rect key="frame" x="2" y="258" width="316" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <color key="textColor" red="1" green="0.66274511810000003" blue="0.3058823645" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+                <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" background="collen-logo.png" id="127">
+                    <rect key="frame" x="20" y="207" width="280" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <action selector="onNumericKeyPressed:" destination="-1" eventType="editingChanged" id="131"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="150">
+                    <rect key="frame" x="60" y="352" width="200" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="green.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onButtonClick:" destination="-1" eventType="touchUpInside" id="154"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="151">
+                    <rect key="frame" x="60" y="415" width="200" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="red.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onButtonClick:" destination="-1" eventType="touchUpInside" id="153"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="159">
+                    <rect key="frame" x="60" y="344" width="200" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="cancel.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onButtonClick:" destination="-1" eventType="touchUpInside" id="160"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="163">
+                    <rect key="frame" x="60" y="378" width="200" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="red.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onButtonClick:" destination="-1" eventType="touchUpInside" id="165"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UpH-eU-PId">
+                    <rect key="frame" x="120" y="441" width="80" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    <state key="normal" image="popUpMenuImage.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onButtonClick:" destination="-1" eventType="touchUpInside" id="gxD-Zw-Dac"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECORDING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W16-Nd-bmb">
+                    <rect key="frame" x="99" y="17" width="123" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" id="ODw-K8-iQp">
+                    <rect key="frame" x="40" y="89" width="240" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <subviews>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="CTb-1y-X9P">
+                            <rect key="frame" x="6" y="33" width="228" height="31"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <connections>
+                                <action selector="volumeChanged:" destination="-1" eventType="valueChanged" id="gvs-be-TR8"/>
+                            </connections>
+                        </slider>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ion-AG-DkX">
+                            <rect key="frame" x="85" y="8" width="70" height="21"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cancel.png" width="148" height="45"/>
+        <image name="collen-back.png" width="320" height="480"/>
+        <image name="collen-logo.png" width="320" height="295"/>
+        <image name="green.png" width="200" height="45"/>
+        <image name="popUpMenuImage.png" width="121" height="39"/>
+        <image name="red.png" width="200" height="45"/>
+    </resources>
+</document>

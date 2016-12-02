@@ -1,0 +1,86 @@
+//
+//  GenDefs.h
+//
+//  Created on 1/26/12.
+//  Copyright (c) 2012 AbtoSoftware. All rights reserved.
+//
+
+#ifndef Sample_1_GenDefs_h
+#define Sample_1_GenDefs_h
+
+#define IDENTITY_DISPLAY_NAME @"IDENTITY_DISPLAY_NAME"
+#define IDENTITY_IMPU @"IDENTITY_IMPU"
+#define IDENTITY_IMPI @"IDENTITY_IMPI"
+#define IDENTITY_AUTH_ID @"IDENTITY_AUTH_ID"
+#define IDENTITY_PASSWORD @"IDENTITY_PASSWORD"
+
+#define NATT_USE_STUN @"NATT_USE_STUN"
+#define NATT_STUN_SERVER @"NATT_STUN_SERVER"
+#define NATT_STUN_PORT @"NATT_STUN_PORT"
+#define NETWORK_REALM @"NETWORK_REALM"
+#define NETWORK_USE_PCSCF @"NETWORK_USE_PCSCF"
+#define NETWORK_PCSCF_HOST @"NETWORK_PCSCF_HOST"
+#define NETWORK_PCSCF_PORT @"NETWORK_PCSCF_PORT"
+#define NETWORK_USE_3G @"NETWORK_USE_3G"
+#define NETWORK_USE_SRTP @"NETWORK_USE_SRTP"
+
+// audio codecs
+#define MEDIA_CODEC_USE_SILK @"MEDIA_CODEC_USE_SILK"
+#define MEDIA_CODEC_USE_G722 @"MEDIA_CODEC_USE_G722"
+#define MEDIA_CODEC_USE_G729AB @"MEDIA_CODEC_USE_G729AB"
+#define MEDIA_CODEC_USE_PCMA @"MEDIA_CODEC_USE_PCMA"
+#define MEDIA_CODEC_USE_PCMU @"MEDIA_CODEC_USE_PCMU"
+#define MEDIA_CODEC_USE_SPEEX @"MEDIA_CODEC_USE_SPEEX"
+#define MEDIA_CODEC_USE_GSM @"MEDIA_CODEC_USE_GSM"
+#define MEDIA_CODEC_USE_AMR @"MEDIA_CODEC_USE_AMR"
+#define MEDIA_CODEC_USE_ILBC @"MEDIA_CODEC_USE_ILBC"
+// video codecs
+#define MEDIA_CODEC_USE_VP8 @"MEDIA_CODEC_USE_VP8"
+#define MEDIA_CODEC_USE_H263 @"MEDIA_CODEC_USE_H263"
+#define MEDIA_CODEC_USE_H263P @"MEDIA_CODEC_USE_H263P"
+#define MEDIA_CODEC_USE_H264BP10 @"MEDIA_CODEC_USE_H264BP10"
+#define MEDIA_CODEC_USE_H264BP20 @"MEDIA_CODEC_USE_H264BP20"
+#define MEDIA_CODEC_USE_H264BP30 @"MEDIA_CODEC_USE_H264BP30"
+#define MEDIA_CODEC_USE_THEORA @"MEDIA_CODEC_USE_THEORA"
+#define MEDIA_CODEC_USE_MP4VES @"MEDIA_CODEC_USE_MP4VES"
+
+#define MEDIA_VIDEO_QUALITY @"MEDIA_VIDEO_QUALITY"
+
+#define IM_HISTORY_KEY @"IM_HISTORY"
+#define IM_FROM_KEY @"IM_FROM"
+#define IM_TO_KEY @"IM_TO"
+#define IM_BODY_KEY @"IM_BODY"
+#define IM_IS_READ_KEY @"IM_IS_READ"
+
+typedef NS_ENUM(NSInteger, PhoneEvents) {
+    PhoneEventsRegSuccess = 0,
+    PhoneEventsRegFailed,
+    PhoneEventsUnregSuccess,
+    PhoneEventsUnregFailed,
+    PhoneEventsRemoteAlerting
+};
+
+typedef NS_ENUM(NSInteger, CallEvents) {
+    CallEventsConnected = 0,
+    CallEventsDisconnected,
+    CallEventsAlerting,
+    CallEventsIncoming,
+    CallEventsTransfering,
+    CallEventsZrtpSas,
+    CallEventsZrtpSecureState,
+    CallEventsZrtpError,
+};
+
+#define SETTINGS_KEY @"settings"
+
+#define CALL_ID_ARGUMENT    @"callId"
+#define CONTACT_ARGUMENT    @"contact"
+#define STATUS_ARGUMENT     @"status"
+#define MESSAGE_ARGUMENT    @"message"
+
+#define NOTIFICATION_NEW_IM @"NOTIFICATION_NEW_IM"
+
+#define NOTIFICATION_PHONE_EVENT    @"NOTIFICATION_PHONE_EVENT"
+#define NOTIFICATION_CALL_EVENT     @"NOTIFICATION_CALL_EVENT"
+
+#endif

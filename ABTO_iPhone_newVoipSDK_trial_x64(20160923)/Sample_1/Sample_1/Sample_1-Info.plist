@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>ABTO Phone</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>ico.png</string>
+		<string>ico.png</string>
+		<string>ico.png</string>
+		<string>ico.png</string>
+		<string>ico114.png</string>
+	</array>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>Icon80</string>
+				<string>Icon58</string>
+				<string>Icon29</string>
+				<string>Icon120</string>
+				<string>ico.png</string>
+				<string>ico.png</string>
+				<string>ico.png</string>
+				<string>ico.png</string>
+				<string>ico114.png</string>
+			</array>
+		</dict>
+	</dict>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.3</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>2.3</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.utilities</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Might be used as source of ringtone/ringbacktone</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Might be used as bluetooth source</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Required for video calls</string>
+	<key>NSHumanReadableCopyright</key>
+	<string></string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Required for audio calls</string>
+	<key>UIApplicationExitsOnSuspend</key>
+	<false/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>voip</string>
+		<string>audio</string>
+	</array>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>UIInterfaceOrientation</key>
+	<string>UIInterfaceOrientationPortrait</string>
+	<key>UIRequiresPersistentWiFi</key>
+	<true/>
+	<key>UIStatusBarHidden</key>
+	<false/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>
